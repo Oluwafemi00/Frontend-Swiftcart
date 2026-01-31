@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Checkout | SwiftCart</title>
+    <link rel="stylesheet" href="css/checkout.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="topbar">
+      <div class="logo">
+        <span class="logo-box">🚚</span>
+        <span class="logo-text">SwiftCart</span>
+      </div>
+
+      <div class="search">
+        <span class="search-icon">🔎</span>
+        <input type="text" placeholder="Search products..." />
+      </div>
+
+      <div class="links">
+        <a href="#">Shop</a>
+        <a href="#">Seller Dashboard</a>
+        <a class="active" href="#">Rider Portal</a>
+      </div>
+
+      <div class="cart">🛒</div>
+    </header>
+
+    <main class="container">
+      <h1>Checkout</h1>
+      <p class="sub">Complete your order</p>
+
+      <!-- DELIVERY ADDRESS -->
+      <div class="card">
+        <p class="label">DELIVERY ADDRESS</p>
+
+        <input
+          id="address"
+          type="text"
+          placeholder="Street / Area (e.g. Tanke Junction)"
+        />
+        <input type="text" value="Ilorin, Kwara State" disabled />
+        <input id="phone" type="text" placeholder="Phone number" />
+      </div>
+
+      <!-- ORDER SUMMARY -->
+      <div class="card">
+        <p class="label">ORDER SUMMARY</p>
+
+        <div class="item">
+          <span>Bluetooth Speaker (x1)</span>
+          <span>₦12,000</span>
+        </div>
+
+        <div class="item">
+          <span>Wireless Earbuds (x2)</span>
+          <span>₦8,000</span>
+        </div>
+
+        <div class="item">
+          <span>Phone Charger (x1)</span>
+          <span>₦2,500</span>
+        </div>
+
+        <div class="item">
+          <span>Power Bank (x1)</span>
+          <span>₦10,000</span>
+        </div>
+
+        <hr />
+
+        <div class="item">
+          <span>Delivery Fee</span>
+          <span>₦1,000</span>
+        </div>
+
+        <div class="item total">
+          <span>Total</span>
+          <span>₦33,500</span>
+        </div>
+      </div>
+
+      <!-- SELECT RIDER (SCROLLABLE CARD) -->
+      <div class="card">
+        <p class="label">SELECT RIDER</p>
+
+        <div class="rider-list">
+          <label class="option">
+            <input type="radio" name="rider" />
+            <div>
+              <strong>Abdul Kareem</strong>
+              <p class="sub">⭐ 4.8 • 120 deliveries</p>
+            </div>
+          </label>
+
+          <label class="option">
+            <input type="radio" name="rider" />
+            <div>
+              <strong>Samuel Adeyemi</strong>
+              <p class="sub">⭐ 4.6 • 98 deliveries</p>
+            </div>
+          </label>
+
+          <label class="option">
+            <input type="radio" name="rider" />
+            <div>
+              <strong>Sadiq Lawal</strong>
+              <p class="sub">⭐ 4.5 • 95 deliveries</p>
+            </div>
+          </label>
+
+          <label class="option">
+            <input type="radio" name="rider" />
+            <div>
+              <strong>Daniel Olatunji</strong>
+              <p class="sub">⭐ 4.7 • 110 deliveries</p>
+            </div>
+          </label>
+
+          <label class="option">
+            <input type="radio" name="rider" />
+            <div>
+              <strong>Hassan Musa</strong>
+              <p class="sub">⭐ 4.9 • 150 deliveries</p>
+            </div>
+          </label>
+
+          <label class="option">
+            <input type="radio" name="rider" />
+            <div>
+              <strong>Chinedu Okafor</strong>
+              <p class="sub">⭐ 4.4 • 70 deliveries</p>
+            </div>
+          </label>
+
+          <label class="option">
+            <input type="radio" name="rider" />
+            <div>
+              <strong>Yusuf Bello</strong>
+              <p class="sub">⭐ 4.6 • 90 deliveries</p>
+            </div>
+          </label>
+
+          <label class="option">
+            <input type="radio" name="rider" />
+            <div>
+              <strong>Emmanuel Johnson</strong>
+              <p class="sub">⭐ 4.5 • 85 deliveries</p>
+            </div>
+          </label>
+
+          <label class="option">
+            <input type="radio" name="rider" />
+            <div>
+              <strong>Mustapha Ahmed</strong>
+              <p class="sub">⭐ 4.3 • 60 deliveries</p>
+            </div>
+          </label>
+
+          <label class="option">
+            <input type="radio" name="rider" />
+            <div>
+              <strong>Michael Adebayo</strong>
+              <p class="sub">⭐ 4.8 • 130 deliveries</p>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- PAYMENT -->
+      <div class="card">
+        <p class="label">PAYMENT METHOD</p>
+
+        <label class="option">
+          <input type="radio" name="payment" />
+          <span>Pay on Delivery</span>
+        </label>
+
+        <label class="option">
+          <input type="radio" name="payment" />
+          <span>Pay Online</span>
+        </label>
+      </div>
+
+      <!-- CONFIRM -->
+      <button id="confirmBtn" class="confirm-btn" disabled>
+        Confirm Order
+      </button>
+    </main>
+
+    <script src="checkout.js"></script>
+  </body>
+</html>

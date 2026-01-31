@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #070b12;
+  color: #fff;
+}
+
+/* Top bar */
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 18px;
+  border-bottom: 1px solid #1f2630;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-box {
+  background: #ff4d2d;
+}
+.logo-text {
+  font-weight: bold;
+}
+
+.search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* background:#0f1520;
+  border:1px solid #1f2630; */
+  padding: 5px;
+  border-radius: 10px;
+}
+.search input {
+  flex: 1;
+  background: transparent;
+  border: none;
+
+  color: white;
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+}
+.links a {
+  color: #cfd6df;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+.links a.active {
+  background: #111a27;
+  border: 1px solid #1f2630;
+  color: white;
+}
+
+.cart {
+  padding: 8px 10px;
+  border: 1px solid #1f2630;
+  border-radius: 10px;
+  background: #0f1520;
+}
+
+/* MAIN */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 25px auto;
+}
+
+.sub {
+  color: #9aa6b2;
+}
+
+.card {
+  background: #0c121a;
+  border: 1px solid #1f2630;
+  border-radius: 14px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #9aa6b2;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 90%;
+  background: #060a10;
+  border: 1px solid #1f2630;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.total {
+  font-weight: bold;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #1f2630;
+  margin: 10px 0;
+}
+
+/* RIDERS */
+.rider-list {
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.option {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  border: 1px solid #1f2630;
+  border-radius: 10px;
+  padding: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* BUTTON */
+.confirm-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  background: #16c75a;
+  color: #04120a;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.confirm-btn:disabled {
+  background: #0e8a40;
+  opacity: 0.6;
+}

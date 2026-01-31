@@ -1,0 +1,133 @@
+:root {
+  background-color: #0b0f14;
+  /* background-card: #121821; */
+  --primary: #ff4d2d;
+  --text-light: #e5e7eb;
+  --text-muted: #9ca3af;
+  --border: #1f2937;
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background: radial-gradient(ellipse, #111827, var(--bg-dark));
+  color: var(--text-light);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.search-box input {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 8px 14px;
+  border-radius: 20px;
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+.hero h1 {
+  font-size: 44px;
+  margin-bottom: 16px;
+}
+
+.hero h1 span {
+  color: var(--primary);
+}
+
+.hero p {
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 0 auto 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.button1 {
+  background: var(--primary);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button2 {
+  background: transparent;
+  border: 1px solid var(--border);
+  padding: 12px 24px;
+  border-radius: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px 80px;
+}
+
+.feature-box {
+  background: transparent var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 24px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px 80px;
+  text-align: center;
+}
+
+.stat h2 {
+  color: var(--primary);
+  font-size: 32px;
+}

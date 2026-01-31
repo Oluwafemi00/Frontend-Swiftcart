@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SwiftCart - Rider Portal</title>
+    <link rel="stylesheet" href="css/rider.css" />
+  </head>
+  <body>
+    <!-- TOP NAV -->
+    <header class="topbar">
+      <div class="logo">
+        <span class="logo-box">🚚</span>
+        <span class="logo-text">SwiftCart</span>
+      </div>
+
+      <div class="search">
+        <span class="search-icon">🔎</span>
+        <input type="text" placeholder="Search products..." />
+      </div>
+
+      <div class="links">
+        <a href="#">Shop</a>
+        <a href="#">Seller Dashboard</a>
+        <a class="active" href="#">Rider Portal</a>
+      </div>
+
+      <div class="cart">🛒</div>
+    </header>
+
+    <main class="container">
+      <!-- HEADING -->
+      <section class="heading">
+        <div>
+          <h1>Rider Portal</h1>
+          <p class="sub">Welcome back, Abdulrahman Sanni</p>
+        </div>
+
+        <div class="status">
+          <span class="sub">Status:</span>
+
+          <label class="switch">
+            <input id="onlineToggle" type="checkbox" checked />
+            <span class="slider"></span>
+          </label>
+
+          <span id="statusBadge" class="badge online">Online</span>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section class="stats">
+        <div class="card">
+          <p class="sub">Today's Earnings</p>
+          <h2>₦86,500</h2>
+        </div>
+
+        <div class="card">
+          <p class="sub">Deliveries Today</p>
+          <h2>8</h2>
+        </div>
+
+        <div class="card">
+          <p class="sub">Rating</p>
+          <h2><span class="star">★</span> 4.9</h2>
+        </div>
+
+        <div class="card">
+          <p class="sub">Total Deliveries</p>
+          <h2>342</h2>
+        </div>
+      </section>
+
+      <!-- TABS -->
+      <section class="tabs">
+        <button id="tabActive" class="tab-btn tab-active">My Active (1)</button>
+        <button id="tabAvailable" class="tab-btn">Available (1)</button>
+      </section>
+
+      <section id="activeSection">
+        <div class="big-card">
+          <div class="big-top">
+            <div>
+              <div class="row">
+                <h3>Order #ilorin-0001</h3>
+                <span class="badge transit">In Transit</span>
+              </div>
+              <p class="price">₦249,970</p>
+            </div>
+
+            <div class="fee">
+              <p class="sub">Delivery fee</p>
+              <p class="fee-amount">₦1,200</p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <p class="sub small-title">PICKUP FROM</p>
+            <p class="bold">Sango Market Tech Hub</p>
+            <p class="sub">No. 14, Sango Market Road, Ilorin, Kwara State</p>
+          </div>
+
+          <div class="info-box">
+            <p class="sub small-title">DELIVER TO</p>
+            <p class="bold">Temiloluwa Bello</p>
+            <p class="sub">12 Unity Road, GRA, Ilorin, Kwara State</p>
+            <p class="sub">📞 +234 803 123 4567</p>
+          </div>
+
+          <div class="actions">
+            <button id="completeBtn" class="btn green">
+              ✅ Complete Delivery
+            </button>
+            <button class="btn dark">📞</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="availableSection" class="hide">
+        <div class="big-card">
+          <div class="big-top">
+            <div>
+              <div class="row">
+                <h3>Order #ilorin-0002</h3>
+                <span class="badge available">Available</span>
+              </div>
+              <p class="price">₦89,500</p>
+            </div>
+
+            <div class="fee">
+              <p class="sub">Delivery fee</p>
+              <p class="fee-amount">₦800</p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <p class="sub small-title">PICKUP FROM</p>
+            <p class="bold">Fate Road Coffee Corner</p>
+            <p class="sub">7 Fate Road, Ilorin, Kwara State</p>
+          </div>
+
+          <div class="info-box">
+            <p class="sub small-title">DELIVER TO</p>
+            <p class="bold">Zainab Lawal</p>
+            <p class="sub">23 Taiwo Road, Ilorin, Kwara State</p>
+            <p class="sub">📞 +234 812 987 6543</p>
+          </div>
+
+          <div class="actions">
+            <button id="acceptBtn" class="btn green">✅ Accept Order</button>
+            <button class="btn dark">ℹ️</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="card recent">
+        <h3>Recent Deliveries</h3>
+        <p class="sub">Your delivery history</p>
+
+        <div class="recent-item">
+          <div>
+            <p class="bold">Tanke Junction Mini-Mart</p>
+            <p class="sub">2:30 PM</p>
+          </div>
+          <p class="bold">₦1,500</p>
+        </div>
+
+        <div class="recent-item">
+          <div>
+            <p class="bold">Sango Market Tech Hub</p>
+            <p class="sub">1:15 PM</p>
+          </div>
+          <p class="bold">₦1,200</p>
+        </div>
+
+        <div class="recent-item">
+          <div>
+            <p class="bold">Geri Alimi Fitness Store</p>
+            <p class="sub">12:00 PM</p>
+          </div>
+          <p class="bold">₦1,350</p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>© 2026 GSE Software Development GROUP 3A</p>
+      </footer>
+    </main>
+
+    <script src="rider.js"></script>
+  </body>
+</html>
