@@ -5,19 +5,29 @@
   <title>SwiftCart | Cart</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/cart2.css">
+  <link rel="stylesheet" href="css/global.css" />
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="navbar">
-    <div class="logo">🛒 SwiftCart</div>
-    <input type="text" placeholder="Search products..." class="search">
-    <nav>
-      <a href="#">Shop</a>
-      <a href="#">Seller Dashboard</a>
-      <a href="#">Rider Portal</a>
-    </nav>
-  </header>
+  <header class="topbar">
+      <div class="logo">
+        <span class="logo-box"><a href="featured.html">🛒</a></span>
+        <span class="logo-text">SwiftCart</span>
+      </div>
+
+      <div class="search">
+        <span class="search-icon">🔎</span>
+        <input id="search" type="text" placeholder="Search products..." />
+      </div>
+
+      <div class="links">
+        <a href="featured.html">Shop</a>
+        <a href="page2.html">Seller Dashboard</a>
+        <a class="active" href="rider.html">Rider Portal</a>
+      </div>
+
+      <div class="cart"><a href="cart2.html">🛒</a></div>
+    </header>
 
   <!-- Cart Container -->
   <main class="cart-container">

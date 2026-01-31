@@ -6,19 +6,29 @@
     <title>Featured Product</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/global.css" />
   </head>
   <body>
-    <header class="navbar">
-      <div class="logo">🚚 SwiftCart</div>
-      <div class="search box">
-        <input type="text" placeholder="Search Products...." />
+    <header class="topbar">
+      <div class="logo">
+        <span id="logo-box" class="logo-box"
+          ><a href="featured.html">🛒</a></span
+        >
+        <span id="logo-text" class="logo-text">SwiftCart</span>
       </div>
-      <nav>
-        <a href="#">Shop</a>
+
+      <div class="search">
+        <span class="search-icon">🔎</span>
+        <input type="text" placeholder="Search products..." />
+      </div>
+
+      <div class="links">
+        <a href="#featured-section">Shop</a>
         <a href="page2.html">Seller Dashboard</a>
-        <a href="rider.html">Rider Portal</a>
-        <a href="cart2.html">🛒</a>
-      </nav>
+        <a class="active" href="rider.html">Rider Portal</a>
+      </div>
+
+      <div class="cart"><a href="cart2.html">🛒</a></div>
     </header>
     <section class="hero">
       <h1><span>Unified</span> Commerce <br />& Logistics Platform</h1>
@@ -28,21 +38,25 @@
         Experience real-time delivery tracking and instant order management.
       </p>
       <div class="hero-buttons">
-        <button class="button1">Start Shopping →</button>
-        <button class="button2">Become a Seller</button>
+        <button class="button1">
+          <a href="#featured-section">Start Shopping →</a>
+        </button>
+        <button class="button2">
+          <a href="page2.html">Become a Seller</a>
+        </button>
       </div>
     </section>
     <section class="features">
       <div class="feature-box">
-        <div>
+        <div id="feature-box">
           <h3>Fast Delivery</h3>
           <p>Real-time rider tracking</p>
         </div>
-        <div class="feature-box">
+        <div id="feature-box" class="feature-box">
           <h3>Secure Payments</h3>
           <p>Protected transactions</p>
         </div>
-        <div class="feature-box">
+        <div id="feature-box" class="feature-box">
           <h3>24/7 Support</h3>
           <p>Always here for you</p>
         </div>
@@ -67,7 +81,7 @@
       </div>
     </section>
     <section>
-      <div class="featured-section">
+      <div id="featured-section" class="featured-section">
         <div>
           <h2>Featured Products</h2>
           <p>Discover amazing products from verified sellers</p>
@@ -92,7 +106,7 @@
             <span class="star">★</span> 4.8
             <span class="reviews">(234 reviews)</span>
           </p>
-          <h2>$120</h2>
+          <h2>₦9000</h2>
           <button class="btn-add">🛒 Add</button>
         </div>
         <div class="product">
@@ -106,7 +120,7 @@
             <span class="star">★</span> 4.6
             <span class="reviews">(2189 reviews)</span>
           </p>
-          <h2>$120</h2>
+          <h2>₦8000</h2>
           <button class="btn-add">🛒 Add</button>
         </div>
         <div class="product">
@@ -119,7 +133,7 @@
             <span class="star">★</span> 4.7
             <span class="reviews">(412 reviews)</span>
           </p>
-          <h2>$120</h2>
+          <h2>₦1.05M</h2>
           <button class="btn-add">🛒 Add</button>
         </div>
         <div class="product">
@@ -133,7 +147,7 @@
             <span class="star">★</span> 4.5
             <span class="reviews">(23453 reviews)</span>
           </p>
-          <h2>$120</h2>
+          <h2>₦7000</h2>
           <button class="btn-add">🛒 Add</button>
         </div>
       </div>
@@ -147,7 +161,7 @@
             <span class="star">★</span> 4.5
             <span class="reviews">(23453 reviews)</span>
           </p>
-          <h2>$120</h2>
+          <h2>₦5000</h2>
           <button class="btn-add">🛒 Add</button>
         </div>
         <div class="product">
@@ -159,7 +173,7 @@
             <span class="star">★</span> 4.5
             <span class="reviews">(23453 reviews)</span>
           </p>
-          <h2>$120</h2>
+          <h2>₦3000</h2>
           <button class="btn-add">🛒 Add</button>
         </div>
         <div class="product">
@@ -171,7 +185,7 @@
             <span class="star">★</span> 4.5
             <span class="reviews">(23453 reviews)</span>
           </p>
-          <h2>$120</h2>
+          <h2>₦5000</h2>
           <button class="btn-add">🛒 Add</button>
         </div>
         <div class="product">
@@ -183,7 +197,7 @@
             <span class="star">★</span> 4.5
             <span class="reviews">(23453 reviews)</span>
           </p>
-          <h2>$120</h2>
+          <h2>₦3000</h2>
           <button class="btn-add">🛒 Add</button>
         </div>
       </div>

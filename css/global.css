@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background: #070b12;
   color: #fff;
 }
@@ -21,9 +21,13 @@ body {
 }
 .logo-box {
   background: #ff4d2d;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 1.5rem !important;
 }
 .logo-text {
   font-weight: bold;
+  font-size: 1.5rem !important;
 }
 
 .search {
@@ -55,7 +59,7 @@ body {
   border-radius: 8px;
 }
 .links a.active {
-  background: #111a27;
+  background: #0a1322 !important;
   border: 1px solid #1f2630;
   color: white;
 }
@@ -64,7 +68,7 @@ body {
   padding: 8px 10px;
   border: 1px solid #1f2630;
   border-radius: 10px;
-  background: #0f1520;
+  background: #0a1322 !important;
 }
 
 /* MAIN */
@@ -152,4 +156,9 @@ hr {
 .confirm-btn:disabled {
   background: #0e8a40;
   opacity: 0.6;
+}
+
+a {
+  text-decoration: none !important;
+  color: white !important;
 }
