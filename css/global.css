@@ -162,3 +162,12 @@ a {
   text-decoration: none !important;
   color: white !important;
 }
+
+#confirmBtn:hover {
+  background-color: green;
+  color: white !important;
+  cursor: pointer;
+}
+#confirmBtn {
+  color: white !important;
+}

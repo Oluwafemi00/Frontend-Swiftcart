@@ -42,4 +42,5 @@ button.addEventListener("click", function () {
   }
 
   alert("Order confirmed successfully!");
+  window.location.href = "order.html";
 });

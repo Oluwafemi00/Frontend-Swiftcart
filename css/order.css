@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #05070f, #0b1220);
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 30px;
+  background: #070b14;
+}
+
+.logo {
+  font-weight: 600;
+}
+
+nav a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: #9ca3af;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* Success Layout */
+.success-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.success-card {
+  background: #0f172a;
+  border-radius: 20px;
+  border: 1px solid #1f2937;
+  padding: 40px;
+  max-width: 460px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Icon */
+.success-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #22c55e;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+}
+
+/* Text */
+.success-card h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.success-card p {
+  color: #9ca3af;
+  margin-bottom: 24px;
+}
+
+/* Order Details */
+.order-details {
+  background: #111827;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.detail-row span:first-child {
+  color: #9ca3af;
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn.primary {
+  background: #ff5a3c;
+  color: white;
+}
+
+.btn.secondary {
+  background: #111827;
+  color: #e5e7eb;
+  border: 1px solid #1f2937;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
