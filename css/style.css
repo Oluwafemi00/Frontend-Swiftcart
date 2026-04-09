@@ -2,248 +2,228 @@ body {
   background-color: #050e1d;
   color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 2rem; /* Added just for spacing around the whole page */
 }
 
-button.btn-add {
-  background-color: #ff5a3c;
-  position: relative;
-  bottom: 3.5rem;
-  left: 15rem;
-  font-size: 14px;
-  font-weight: 600;
-  border: none;
-  min-height: 2rem;
+/* --- Typography Reset --- */
+h2,
+h3,
+p {
+  margin: 0;
 }
 
-.stands {
-  margin-bottom: 0;
+/* --- Header Section --- */
+.featured-section-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 5rem;
 }
 
-.rating + h2 {
-  position: relative;
-  bottom: 1.5rem;
-  left: 0.5rem;
-  color: #ff5a3c;
+.featured-header {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on mobile */
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.con {
-  color: #9ca3af;
+.header-text h2 {
+  font-size: xx-large;
   margin-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
 }
 
-img {
-  width: 20rem;
-  height: 20rem;
-  object-fit: fill;
+.header-text p {
+  color: #9ca3af;
+}
+
+.btn-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn-display button {
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  background-color: #0a1322;
+  color: white;
+  border: 1px solid #9ca3af;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-display button:hover,
+.btn-display button.active {
+  background-color: #ff5a3c;
+  border-color: #ff5a3c;
+}
+
+/* --- Products Grid --- */
+.products-grid {
+  display: grid;
+  /* Automatically creates columns based on available width. Super responsive! */
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* --- Individual Product Card --- */
+.product {
+  background-color: #0a1322;
+  border: 1px solid rgba(66, 60, 60, 0.425);
   border-radius: 0.5rem;
-}
-
-img + h3 {
-  margin-left: 0.5rem;
-  position: relative;
-  bottom: 1rem;
-}
-
-.product p {
-  margin-left: 0.5rem;
-  position: relative;
-  bottom: 1.8rem;
+  display: flex;
+  flex-direction: column; /* Stacks image, content, and footer */
+  overflow: hidden; /* Keeps image inside border radius */
+  transition: transform 0.3s ease;
 }
 
 .product:hover {
-  /* s */
-  transform: scale(1.05);
+  transform: scale(1.03);
+}
+
+.product img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* Prevents image distortion */
+}
+
+.product-content {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Pushes the footer to the bottom of the card */
+}
+
+.product-content h3 {
+  font-size: large;
+  margin-bottom: 0.5rem;
+}
+
+.product-content .desc {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  flex-grow: 1; /* Makes descriptions take up available space evenly */
 }
 
 .rating {
-  position: relative;
-  bottom: 1.8rem;
+  margin-bottom: 1rem;
 }
 
 .rating .star {
   color: #ff5a3c;
 }
 
-.rating {
-  margin-top: 0.3rem;
+.rating .reviews {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-left: 0.3rem;
 }
 
-.featured-section {
+/* --- Product Footer (Price & Button) --- */
+.product-footer {
   display: flex;
-  justify-content: space-around;
-}
-
-.btn-display {
-  display: flex;
-  gap: 5px;
   justify-content: space-between;
+  align-items: center;
 }
 
-button {
-  border-radius: 10px;
-  max-height: 2rem;
-  background-color: #0a1322;
+.product-footer h2 {
+  color: #ff5a3c;
+  font-size: 1.5rem;
+}
+
+a.btn-add {
+  background-color: #ff5a3c;
   color: white;
-  border: 0.2px #9ca3af solid;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
 }
 
-button:hover {
-  background-color: #ff5a3c;
-  cursor: pointer;
+a.btn-add:hover {
+  background-color: #e0482b;
 }
-
-button.active {
-  background-color: #ff5a3c;
-}
-
-h2 {
-  font-size: xx-large;
-}
-
-h3 {
-  font-size: large;
-}
-
-h2,
-p {
-  margin: 0%;
-}
-
-.products-container {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 2.5rem;
-  height: 50rem;
-  margin-bottom: 0;
-}
-
-.products-container-two {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 2.5rem;
-  height: 50rem;
-  margin-top: -280px;
-}
-
-.products-container div {
-  border: 0.2px solid rgba(66, 60, 60, 0.425);
-  height: 30rem;
-  width: 20rem;
-  border-radius: 0.5rem;
-  min-width: 220px;
-  background-color: #0a1322;
-}
-
-.products-container-two div {
-  border: 0.2px solid rgba(66, 60, 60, 0.425);
-  height: 30rem;
-  width: 20rem;
-  border-radius: 0.5rem;
-  min-width: 220px;
-  background-color: #0a1322;
-}
-
+/* =========================================
+   Info Section (How SwiftCart Works)
+========================================= */
 .info {
-  background-color: #0a1322;
-  padding-top: 3rem;
-  padding-bottom: 4rem;
-  text-align: center;
-  margin-top: -15rem;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  background-color: var(--bg-card);
+  padding: 4rem 0; /* A bit more padding for breathing room */
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
-.info > div > h3 {
-  margin-left: 3rem;
-  font-size: xx-large;
+/* Center the main heading perfectly */
+.info > div:first-child h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
 }
 
 .info-container {
   display: flex;
-  justify-content: center;
-  gap: 4rem;
+  justify-content: center; /* Centers the 3 blocks */
+  gap: 4rem; /* Restores the original spacing between columns */
+  text-align: center;
+  flex-wrap: wrap; /* Allows stacking on smaller screens */
 }
 
-.info-container div > .num {
-  color: #ff5a3c;
-  background-color: rgba(90, 41, 41, 0.418);
+/* Restoring original 300px width constraint */
+.info-container > div {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.num {
+  color: var(--primary);
+  background: rgba(255, 90, 60, 0.1);
   width: 4rem;
-  border-radius: 100%;
-  font-size: xx-large;
-  text-align: center;
-  margin-left: 7rem;
+  height: 4rem;
+  line-height: 4rem;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.num + h3 {
-  font-size: x-large;
+.info-container h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
-.info-container div {
-  text-align: center;
-  width: 300px;
+.info-container p {
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* =========================================
+   Footer Section
+========================================= */
+footer {
+  padding: 2rem 0;
 }
 
 .favicon {
   display: flex;
-  justify-content: space-between;
-}
-
-.favicon p {
-  margin-top: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 .favicon h3 {
-  margin-left: 8rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .favicon p {
-  margin-right: 8rem;
-}
-
-.reviews {
-  font-size: 16px;
-  color: #9ca3af;
-}
-
-h3 + p {
-  color: #9ca3af;
-}
-
-#logo-box {
-  background: #ff4d2d;
-  padding: 8px 10px;
-  border-radius: 10px;
-  font-size: 1.5rem !important;
-}
-#logo-text {
-  font-weight: bold;
-  font-size: 1.5rem !important;
-}
-
-#feature-box {
-  margin-top: 2rem;
-  /* padding: 0%; */
-}
-
-.feature-box > #feature-box {
-  margin-top: 1rem;
-}
-
-.hero-buttons button:hover {
-  cursor: pointer;
-}
-
-.hero-buttons button {
-  transition: all 0.3s ease-in-out;
-  padding: 1.5rem;
-  padding-top: 1rem;
-}
-
-.button1 a,
-.button2 a {
-  text-decoration: none;
-  color: white;
+  color: var(--text-muted);
 }

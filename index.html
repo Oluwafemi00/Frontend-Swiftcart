@@ -78,14 +78,14 @@
         <p>On-time Delivery</p>
       </div>
     </section>
-    <section>
-      <div id="featured-section" class="featured-section">
-        <div>
+    <section class="featured-section-wrapper">
+      <div class="featured-header">
+        <div class="header-text">
           <h2>Featured Products</h2>
           <p>Discover amazing products from verified sellers</p>
         </div>
         <div class="btn-display">
-          <button>All</button>
+          <button class="active">All</button>
           <button>Electronics</button>
           <button>Sports</button>
           <button>Food and Beverages</button>
@@ -93,115 +93,153 @@
           <button>Home & Garden</button>
         </div>
       </div>
-      <div class="products-container">
+
+      <div class="products-grid">
         <div class="product">
-          <img src="./images/headphone.webp" alt="" />
-          <h3>Wireless bluetooth headphones</h3>
-          <p>
-            Premium noise-cancelling headphones with 30 hours of battery life
-          </p>
-          <p class="rating">
-            <span class="star">★</span> 4.8
-            <span class="reviews">(234 reviews)</span>
-          </p>
-          <h2>₦9000</h2>
-          <button class="btn-add"><a href="cart2.html">🛒 Add</a></button>
+          <img
+            src="./images/headphone.webp"
+            alt="Wireless bluetooth headphones"
+          />
+          <div class="product-content">
+            <h3>Wireless bluetooth headphones</h3>
+            <p class="desc">
+              Premium noise-cancelling headphones with 30 hours of battery life
+            </p>
+            <div class="rating">
+              <span class="star">★</span> 4.8
+              <span class="reviews">(234 reviews)</span>
+            </div>
+            <div class="product-footer">
+              <h2>₦9000</h2>
+              <a href="cart2.html" class="btn-add">🛒 Add</a>
+            </div>
+          </div>
         </div>
+
         <div class="product">
-          <img src="./images/smartwatch.jpg" alt="" />
-          <h3>Smart Fitness Watch</h3>
-          <p>
-            Track your health with heart rate monitor <br />
-            and GPS
-          </p>
-          <p class="rating">
-            <span class="star">★</span> 4.6
-            <span class="reviews">(2189 reviews)</span>
-          </p>
-          <h2>₦8000</h2>
-          <button class="btn-add"><a href="cart2.html">🛒 Add</a></button>
+          <img src="./images/smartwatch.jpg" alt="Smart Fitness Watch" />
+          <div class="product-content">
+            <h3>Smart Fitness Watch</h3>
+            <p class="desc">
+              Track your health with heart rate monitor and GPS
+            </p>
+            <div class="rating">
+              <span class="star">★</span> 4.6
+              <span class="reviews">(2189 reviews)</span>
+            </div>
+            <div class="product-footer">
+              <h2>₦8000</h2>
+              <a href="cart2.html" class="btn-add">🛒 Add</a>
+            </div>
+          </div>
         </div>
+
         <div class="product">
-          <img src="./images/iPhone-15-pro-Max.jpg" alt="" />
-          <h3>iPhone 15 Pro Max</h3>
-          <p>
-            Titanium design, A17 Pro, pro camera, stunning Super Retina XDR.
-          </p>
-          <p class="rating">
-            <span class="star">★</span> 4.7
-            <span class="reviews">(412 reviews)</span>
-          </p>
-          <h2>₦1.05M</h2>
-          <button class="btn-add"><a href="cart2.html">🛒 Add</a></button>
+          <img src="./images/iPhone-15-pro-Max.jpg" alt="iPhone 15 Pro Max" />
+          <div class="product-content">
+            <h3>iPhone 15 Pro Max</h3>
+            <p class="desc">
+              Titanium design, A17 Pro, pro camera, stunning Super Retina XDR.
+            </p>
+            <div class="rating">
+              <span class="star">★</span> 4.7
+              <span class="reviews">(412 reviews)</span>
+            </div>
+            <div class="product-footer">
+              <h2>₦1.05M</h2>
+              <a href="cart2.html" class="btn-add">🛒 Add</a>
+            </div>
+          </div>
         </div>
+
         <div class="product">
-          <img src="./images/wristwatch.jpg" alt="" />
-          <h3>Leather Wristwatch</h3>
-          <p>
-            Classic leather strap, precision movement, <br />
-            and timeless style for everyday elegance.
-          </p>
-          <p class="rating">
-            <span class="star">★</span> 4.5
-            <span class="reviews">(23453 reviews)</span>
-          </p>
-          <h2>₦7000</h2>
-          <button class="btn-add"><a href="cart2.html">🛒 Add</a></button>
+          <img src="./images/wristwatch.jpg" alt="Leather Wristwatch" />
+          <div class="product-content">
+            <h3>Leather Wristwatch</h3>
+            <p class="desc">
+              Classic leather strap, precision movement, and timeless style for
+              everyday elegance.
+            </p>
+            <div class="rating">
+              <span class="star">★</span> 4.5
+              <span class="reviews">(23453 reviews)</span>
+            </div>
+            <div class="product-footer">
+              <h2>₦7000</h2>
+              <a href="cart2.html" class="btn-add">🛒 Add</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="products-container-two">
+
         <div class="product">
-          <img src="./images/Laptop-Stand.jpg" alt="" />
-          <h3 class="stands">Laptop Stand</h3>
-          <br />
-          <p class="con">Ergonomic, portable, and boosts productivity.</p>
-          <p class="rating">
-            <span class="star">★</span> 4.5
-            <span class="reviews">(23453 reviews)</span>
-          </p>
-          <h2>₦5000</h2>
-          <button class="btn-add"><a href="cart2.html">🛒 Add</a></button>
+          <img src="./images/Laptop-Stand.jpg" alt="Laptop Stand" />
+          <div class="product-content">
+            <h3>Laptop Stand</h3>
+            <p class="desc">Ergonomic, portable, and boosts productivity.</p>
+            <div class="rating">
+              <span class="star">★</span> 4.5
+              <span class="reviews">(23453 reviews)</span>
+            </div>
+            <div class="product-footer">
+              <h2>₦5000</h2>
+              <a href="cart2.html" class="btn-add">🛒 Add</a>
+            </div>
+          </div>
         </div>
+
         <div class="product">
-          <img src="./images/phone mount.webp" alt="" />
-          <h3>Phone Mount</h3>
-          <p>Secure, hands-free phone use in your car.</p>
-          <br />
-          <p class="rating">
-            <span class="star">★</span> 4.5
-            <span class="reviews">(23453 reviews)</span>
-          </p>
-          <h2>₦3000</h2>
-          <button class="btn-add"><a href="cart2.html">🛒 Add</a></button>
+          <img src="./images/phone mount.webp" alt="Phone Mount" />
+          <div class="product-content">
+            <h3>Phone Mount</h3>
+            <p class="desc">Secure, hands-free phone use in your car.</p>
+            <div class="rating">
+              <span class="star">★</span> 4.5
+              <span class="reviews">(23453 reviews)</span>
+            </div>
+            <div class="product-footer">
+              <h2>₦3000</h2>
+              <a href="cart2.html" class="btn-add">🛒 Add</a>
+            </div>
+          </div>
         </div>
+
         <div class="product">
-          <img src="./images/lamp.webp" alt="" />
-          <h3>LED Desk Lamp</h3>
-          <p>Bright, adjustable, and energy-saving.</p>
-          <br />
-          <p class="rating">
-            <span class="star">★</span> 4.5
-            <span class="reviews">(23453 reviews)</span>
-          </p>
-          <h2>₦5000</h2>
-          <button class="btn-add"><a href="cart2.html">🛒 Add</a></button>
+          <img src="./images/lamp.webp" alt="LED Desk Lamp" />
+          <div class="product-content">
+            <h3>LED Desk Lamp</h3>
+            <p class="desc">Bright, adjustable, and energy-saving.</p>
+            <div class="rating">
+              <span class="star">★</span> 4.5
+              <span class="reviews">(23453 reviews)</span>
+            </div>
+            <div class="product-footer">
+              <h2>₦5000</h2>
+              <a href="cart2.html" class="btn-add">🛒 Add</a>
+            </div>
+          </div>
         </div>
+
         <div class="product">
-          <img src="./images/Smart-Plug.jpg" alt="" />
-          <h3>Smart Plug</h3>
-          <p>Control devices with your phone or voice</p>
-          <br />
-          <p class="rating">
-            <span class="star">★</span> 4.5
-            <span class="reviews">(23453 reviews)</span>
-          </p>
-          <h2>₦3000</h2>
-          <button class="btn-add"><a href="cart2.html">🛒 Add</a></button>
+          <img src="./images/Smart-Plug.jpg" alt="Smart Plug" />
+          <div class="product-content">
+            <h3>Smart Plug</h3>
+            <p class="desc">Control devices with your phone or voice.</p>
+            <div class="rating">
+              <span class="star">★</span> 4.5
+              <span class="reviews">(23453 reviews)</span>
+            </div>
+            <div class="product-footer">
+              <h2>₦3000</h2>
+              <a href="cart2.html" class="btn-add">🛒 Add</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class="info">
-      <div><h3>How SwiftCart Works</h3></div>
+      <div>
+        <h3>How SwiftCart Works</h3>
+      </div>
       <div class="info-container">
         <div>
           <h3 class="num">01</h3>
@@ -222,6 +260,7 @@
         </div>
       </div>
     </section>
+
     <footer>
       <div class="favicon">
         <h3>SwiftCart</h3>
