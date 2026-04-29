@@ -7,6 +7,67 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/global.css" />
+    <style>
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1rem;
+        gap: 1rem;
+      }
+
+      .search {
+        flex: 1;
+        min-width: 200px;
+      }
+
+      .search input {
+        width: 100%;
+        padding: 0.5rem;
+      }
+
+      .links {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 3rem 1rem;
+      }
+
+      .hero h1 {
+        font-size: clamp(1.8rem, 5vw, 3rem);
+      }
+
+      .hero p {
+        max-width: 600px;
+        margin: 1rem auto;
+      }
+
+      .hero-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .feature-box {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .feature-box-item {
+        background: #0a1322;
+        padding: 1.5rem;
+        border-radius: 10px;
+        text-align: center;
+        width: 250px;
+      }
+    </style>
   </head>
   <body>
     <header class="topbar">
@@ -85,17 +146,17 @@
           <p>Discover amazing products from verified sellers</p>
         </div>
         <div class="btn-display">
-          <button class="active">All</button>
-          <button>Electronics</button>
-          <button>Sports</button>
-          <button>Food and Beverages</button>
-          <button>Accessories</button>
-          <button>Home & Garden</button>
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="electronics">Electronics</button>
+          <button data-filter="sports">Sports</button>
+          <button data-filter="food">Food and Beverages</button>
+          <button data-filter="accessories">Accessories</button>
+          <button data-filter="home">Home & Garden</button>
         </div>
       </div>
 
       <div class="products-grid">
-        <div class="product">
+        <div class="product" data-category="electronics">
           <img
             src="./images/headphone.webp"
             alt="Wireless bluetooth headphones"
@@ -116,7 +177,7 @@
           </div>
         </div>
 
-        <div class="product">
+        <div class="product" data-category="accessories">
           <img src="./images/smartwatch.jpg" alt="Smart Fitness Watch" />
           <div class="product-content">
             <h3>Smart Fitness Watch</h3>
@@ -134,7 +195,7 @@
           </div>
         </div>
 
-        <div class="product">
+        <div class="product" data-category="electronics">
           <img src="./images/iPhone-15-pro-Max.jpg" alt="iPhone 15 Pro Max" />
           <div class="product-content">
             <h3>iPhone 15 Pro Max</h3>
@@ -152,7 +213,7 @@
           </div>
         </div>
 
-        <div class="product">
+        <div class="product" data-category="accessories">
           <img src="./images/wristwatch.jpg" alt="Leather Wristwatch" />
           <div class="product-content">
             <h3>Leather Wristwatch</h3>
@@ -171,7 +232,7 @@
           </div>
         </div>
 
-        <div class="product">
+        <div class="product" data-category="accessories">
           <img src="./images/Laptop-Stand.jpg" alt="Laptop Stand" />
           <div class="product-content">
             <h3>Laptop Stand</h3>
@@ -187,7 +248,7 @@
           </div>
         </div>
 
-        <div class="product">
+        <div class="product" data-category="accessories">
           <img src="./images/phone mount.webp" alt="Phone Mount" />
           <div class="product-content">
             <h3>Phone Mount</h3>
@@ -203,7 +264,7 @@
           </div>
         </div>
 
-        <div class="product">
+        <div class="product" data-category="home">
           <img src="./images/lamp.webp" alt="LED Desk Lamp" />
           <div class="product-content">
             <h3>LED Desk Lamp</h3>
@@ -219,7 +280,7 @@
           </div>
         </div>
 
-        <div class="product">
+        <div class="product" data-category="home">
           <img src="./images/Smart-Plug.jpg" alt="Smart Plug" />
           <div class="product-content">
             <h3>Smart Plug</h3>
@@ -234,6 +295,7 @@
             </div>
           </div>
         </div>
+        <p id="no-products" class="no-products">No products found.</p>
       </div>
     </section>
     <section class="info">

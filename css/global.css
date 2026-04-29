@@ -171,3 +171,28 @@ a {
 #confirmBtn {
   color: white !important;
 }
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.search {
+  flex: 1;
+  min-width: 200px;
+}
+
+.search input {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
